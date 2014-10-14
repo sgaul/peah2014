@@ -7,7 +7,7 @@ framework   : minimal      #
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
 widgets     : []            # {mathjax, quiz, bootstrap}
-ext_widgets : {rCharts: ["libraries/nvd3", "libraries/morris"]} 
+ext_widgets : {rCharts: ["libraries/nvd3"]} 
 mode        : selfcontained # {standalone, draft}
 ---
 
@@ -15,7 +15,7 @@ mode        : selfcontained # {standalone, draft}
 
 We had great results in 2014! 
 
-While [2013 had the lowest yields ever](http://sgaul.github.io/peah2013/), this year had the highest yields ever (at least, as far as the historical record shows).  
+While [2013 had the lowest yields ever](http://sgaul.github.io/peah2013/), this year had the highest yields ever (at least, as far as the historical record goes).  
 
 We distributed 2,367 pounds of vegetables or about 225,000 calories - roughly three months of food for an adult. This is almost three times last year's total and 40 percent higher than the previous best year.
 
@@ -101,8 +101,8 @@ We distributed 2,367 pounds of vegetables or about 225,000 calories - roughly th
 },
 {
  "Year": 2014,
-"Pounds":           2367,
-"Calories":      225292.96 
+"Pounds":           2390,
+"Calories":      226981.84 
 } 
 ]
   
@@ -237,8 +237,8 @@ Here is the same result in pounds harvested.
 },
 {
  "Year": 2014,
-"Pounds":           2367,
-"Calories":      225292.96 
+"Pounds":           2390,
+"Calories":      226981.84 
 } 
 ]
   
@@ -299,7 +299,7 @@ Individual results for the year are listed in the table below.
 Some gardeners harvested more than one crop for the pe'ah contribution, so each crop is shown in that case. We also tracked a few plots in the same column, so I've lumped those together, i.e. plots 6 ('Masha and Dan') and 11 ('Len and Avery') are listed as 'Masha and Dan and Len and Avery.'  
 
 <!-- html table generated in R 3.0.2 by xtable 1.7-4 package -->
-<!-- Tue Oct 14 11:30:04 2014 -->
+<!-- Tue Oct 14 15:29:58 2014 -->
 <table border=1>
 <tr> <th> Name </th> <th> Crop </th> <th> Pounds </th> <th> Calories </th>  </tr>
   <tr> <td> Avi and Michelle </td> <td> broccoli </td> <td align="right"> 18 </td> <td align="right"> 2701 </td> </tr>
@@ -313,7 +313,7 @@ Some gardeners harvested more than one crop for the pe'ah contribution, so each 
   <tr> <td> Community </td> <td> beets </td> <td align="right"> 2 </td> <td align="right"> 488 </td> </tr>
   <tr> <td> Community </td> <td> cabbage </td> <td align="right"> 7 </td> <td align="right"> 794 </td> </tr>
   <tr> <td> Community </td> <td> peppers </td> <td align="right"> 10 </td> <td align="right"> 863 </td> </tr>
-  <tr> <td> Community </td> <td> tomatoes </td> <td align="right"> 50 </td> <td align="right"> 3405 </td> </tr>
+  <tr> <td> Community </td> <td> tomatoes </td> <td align="right"> 70 </td> <td align="right"> 4767 </td> </tr>
   <tr> <td> Community </td> <td> zucchini </td> <td align="right"> 40 </td> <td align="right"> 2906 </td> </tr>
   <tr> <td> Dalton and Larry </td> <td> collards </td> <td align="right"> 22 </td> <td align="right"> 2996 </td> </tr>
   <tr> <td> Holly / Deb / Toni / Community </td> <td> beets </td> <td align="right"> 120 </td> <td align="right"> 23426 </td> </tr>
@@ -343,7 +343,7 @@ Some gardeners harvested more than one crop for the pe'ah contribution, so each 
   <tr> <td> Masha and Dan and Len and Avery </td> <td> tomatoes </td> <td align="right"> 269 </td> <td align="right"> 18336 </td> </tr>
   <tr> <td> Phil and Raffaella </td> <td> cabbage </td> <td align="right"> 154 </td> <td align="right"> 17451 </td> </tr>
   <tr> <td> Phil and Raffaella </td> <td> zucchini </td> <td align="right"> 32 </td> <td align="right"> 2324 </td> </tr>
-  <tr> <td> Priscilla and Leslie </td> <td> eggplant </td> <td align="right"> 32 </td> <td align="right"> 3459 </td> </tr>
+  <tr> <td> Priscilla and Leslie </td> <td> eggplant </td> <td align="right"> 35 </td> <td align="right"> 3786 </td> </tr>
   <tr> <td> Priscilla and Leslie </td> <td> zucchini </td> <td align="right"> 79 </td> <td align="right"> 5757 </td> </tr>
   <tr> <td> Rabbi + Janice </td> <td> peppers </td> <td align="right"> 7 </td> <td align="right"> 636 </td> </tr>
   <tr> <td> Rabbi + Janice </td> <td> squash </td> <td align="right"> 28 </td> <td align="right"> 2034 </td> </tr>

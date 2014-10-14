@@ -7,7 +7,7 @@ framework   : minimal      #
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
 widgets     : []            # {mathjax, quiz, bootstrap}
-ext_widgets : {rCharts: ["libraries/nvd3", "libraries/morris"]} 
+ext_widgets : {rCharts: ["libraries/nvd3"]} 
 mode        : selfcontained # {standalone, draft}
 ---
 
@@ -15,7 +15,7 @@ mode        : selfcontained # {standalone, draft}
 
 We had great results in 2014! 
 
-While [2013 had the lowest yields ever](http://sgaul.github.io/peah2013/), this year had the highest yields ever (at least, as far as the historical record shows).  
+While [2013 had the lowest yields ever](http://sgaul.github.io/peah2013/), this year had the highest yields ever (at least, as far as the historical record goes).  
 
 We distributed 2,367 pounds of vegetables or about 225,000 calories - roughly three months of food for an adult. This is almost three times last year's total and 40 percent higher than the previous best year.
 
@@ -33,6 +33,7 @@ library(scales)
 library(extrafont)
 windowsFonts(Times=windowsFont("TT Times New Roman"))
 
+#Load 2014 data
 peah <- read.csv("Peah crops stats.csv")
 names <- read.csv("names.csv")
 
