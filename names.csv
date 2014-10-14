@@ -1,0 +1,19 @@
+Plot number,Name
+1,Holly and Deb
+2,Shayla
+3,Toni
+4,Rabbi + Janice
+5,Jennifer
+6,Masha and Dan
+7,Phil and Raffaella
+8,Priscilla and Leslie
+9,Dalton and Larry
+10,Julie and David
+11,Len and Avery
+12,Avi and Michelle
+13,Sue and Scott and Madeline
+14,Community
+1 + 3 + 14,Holly / Deb / Toni / Community
+1 + 4,Holly and Deb and Rabbi and Janice
+6 + 11,Masha and Dan and Len and Avery
+11 + 13,Len and Averay and Sue and Scott and Madeline

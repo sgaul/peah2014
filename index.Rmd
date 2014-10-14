@@ -1,0 +1,201 @@
+---
+title       : Pe'ah Garden stats
+subtitle    : Results for 2014
+author      : Scott Gaul
+job         : Pe'ah stats person
+framework   : minimal      # 
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+ext_widgets : {rCharts: ["libraries/nvd3", "libraries/morris"]} 
+mode        : selfcontained # {standalone, draft}
+---
+
+## 2014 overall results
+
+We had great results in 2014! While [2013 had the lowest yields ever](http://sgaul.github.io/peah2013/), this year had the highest yields ever (at least, as far as the historical record stands).  
+
+We distributed 2,367 pounds of vegetables or about 225,000 calories - roughly three months of food for an adult. This is almost three times last year's total and 40 percent higher than the previous best year.
+
+```{r setup, message = F, echo = F, cache = F}
+require(rCharts)
+knitr::opts_chunk$set(comment = NA, results = 'asis', tidy = F, message = T)
+```
+
+
+```{r chart1, echo = FALSE, message = FALSE, warning = FALSE}
+library(ggplot2)
+library(reshape)
+library(plyr)
+library(scales)
+library(extrafont)
+windowsFonts(Times=windowsFont("TT Times New Roman"))
+
+peah <- read.csv("Peah crops stats.csv")
+names <- read.csv("names.csv")
+
+n1 <- nPlot(y = 'Calories', x = 'Year', 
+            width = 500, height = 300,
+            data = ddply(peah, .(Year), summarise, 
+                    Pounds = sum(Pounds),
+                    Calories = sum(Calories)),
+            type = 'discreteBarChart')
+n1$xAxis(axisLabel='Year')
+n1$yAxis(tickFormat = "#!function(d) {return d3.format(',.0f')(d)}!#", axisLabel='Calories')
+n1$chart(forceY = c(0,170000), margin = list(left = 80))
+n1$print('chart1')
+```
+
+Here is the same result in pounds harvested. 
+
+```{r chart2, echo = FALSE, message = FALSE, warning = FALSE}
+n1 <- nPlot(y = 'Pounds', x = 'Year', 
+            width = 500, height = 300,
+            data = ddply(peah, .(Year), summarise, 
+                    Pounds = sum(Pounds),
+                    Calories = sum(Calories)),
+            type = 'discreteBarChart')
+n1$xAxis(axisLabel='Year')
+n1$yAxis(tickFormat = "#!function(d) {return d3.format(',.0f')(d)}!#", axisLabel='Pounds')
+n1$chart(forceY = c(0,1700), margin = list(left = 80))
+n1$print('chart2')
+```
+
+
+## 2014 individual results
+
+Individual results for the year are listed in the table below. (Some gardeners harvested more than one crop for the pe'ah contribution, so each crop is shown in that case. We also tracked a few plots in the same column, so I've lumped those together, i.e. plots 6 and 11 are 'Masha and Dan and Len and Avery').  
+
+```{r, results='asis', echo = FALSE, message = FALSE, warning = FALSE, fig.height = 8}
+#2014 results by plot and by crop
+peah14 <- subset(peah, Year == 2014)
+peah14 <- merge(peah14, names, by = "Plot.number")
+
+library(xtable)
+table <- ddply(peah14, .(Name, Crop), summarise, 
+               Pounds = round(sum(Pounds),0), 
+               Calories = round(sum(Calories),0))
+print(xtable(table, digits = 0), type = "html", include.rownames = F)
+```
+
+The full data for all years can be found [here](https://docs.google.com/spreadsheet/ccc?key=0AlYsW526rxsmdDhIVzM0VDYzRkdLOXlvcldfQkJtcnc&usp=sharing). 
+
+We don't have individual results for plots the same as in prior years since results for some plots were tracked in the same column. 
+
+We do have results for particular crops. We distributed 15 different kinds of vegetables this year, with tomatoes, squash and zucchini yielding the most (over 300 lbs of each). 
+
+```{r chart4, echo = FALSE, message = FALSE, warning = FALSE}
+peah14bycrop <- ddply(peah14, .(Crop), summarise, Pounds = sum(Pounds), Calories = sum(Calories))
+peah14bycrop$Crop <- reorder(peah14bycrop$Crop, peah14bycrop$Pounds)
+
+c1 <- nPlot(x = 'Crop', y = 'Pounds', 
+            width = 500, height = 300,
+            data = peah14bycrop,
+            type = 'multiBarHorizontalChart')
+c1$xAxis(axisLabel='Crop')
+c1$yAxis(tickFormat = "#!function(d) {return d3.format(',.0f')(d)}!#", axisLabel='Pounds')
+c1$chart(showControls = F)
+c1$print('chart4')
+```
+
+The results by calories are similar, although a couple high-calorie crops like beets and kale show up with better results: 
+
+```{r chart5, echo = FALSE, message = FALSE, warning = FALSE}
+peah14bycrop$Crop <- reorder(peah14bycrop$Crop, peah14bycrop$Calories)
+
+c1 <- nPlot(x = 'Crop', y = 'Calories', 
+            width = 500, height = 300,
+            data = peah14bycrop,
+            type = 'multiBarHorizontalChart')
+c1$xAxis(axisLabel='Crop')
+c1$yAxis(tickFormat = "#!function(d) {return d3.format(',.0f')(d)}!#", axisLabel='Calories')
+c1$chart(showControls = F)
+c1$print('chart5')
+```
+
+## Comparison with prior years
+
+It was a good year for many crops and not really a bad year for any particular crop. We had historically good yields for beets, cucumbers, beans and lettuce. Results for most other crops were above average. 
+
+```{r echo = FALSE, message = FALSE, warning = FALSE, fig.height=12, fig.width = 10}
+yearly <- ddply(peah, .(Year, Crop), summarise, 
+                Pounds = sum(Pounds),
+                Calories = sum(Calories),
+                Calories.per.plot = sum(Calories.per.plot) / mean(Number.of.plots),
+                Pounds.per.plot = sum(Pounds.per.plot) / mean(Number.of.plots))
+
+ggplot(data = subset(yearly, Crop %in% unique(peah14$Crop)), 
+       aes(x = Year, y = Pounds.per.plot)) + 
+  geom_line() + 
+  scale_y_continuous(labels = comma) + 
+  geom_point(data = subset(yearly, Year == 2014 & Crop %in% unique(peah14$Crop)), aes(x = Year, y = Pounds.per.plot), colour = "red") + 
+  labs(title = "Crop harvest trends by year", y = "Pounds per plot") +
+  facet_wrap(~ Crop, ncol = 3, scales = "free_y") + 
+  theme_minimal(base_size = 16, base_family = "Times")
+```
+
+If we compare the total yields by month to the average yields for all prior years, 2014 had higher yields in every month after June, with the biggest differences in July and August.
+
+```{r echo = FALSE, message = FALSE, warning = FALSE, fig.height=6, fig.width = 10}
+#Add week field to data
+peah$Date <- as.Date(peah$Date, format = "%m/%d/%Y")
+peah$Week = as.integer(format(strptime(peah$Date,"%Y-%m-%d"),"%W"))
+
+#Then create field for current vs. prior years
+peah$CurYear = ifelse(peah$Year == 2014, "This Year", "Prior Years")
+
+ggplot(data = ddply(ddply(peah, 
+                    .(Month, Year, CurYear), 
+                    summarise, 
+                    Calories = sum(Calories, na.rm = T)), 
+                    .(Month, CurYear), 
+                    summarise, 
+                    Calories = mean(Calories, na.rm = T)), 
+       aes(x = Month, y = Calories)) + 
+  geom_line(aes(group = CurYear, colour = CurYear), size = 1) + 
+  scale_y_continuous(labels = comma) + 
+  scale_colour_brewer(name = "", palette = "Dark2") + 
+  theme_minimal(base_size = 16, base_family = "Times")
+```
+
+Based on a week-by-week comparison with prior years, we do not appear to have had a noticeably longer growing season than in the past. Harvests continued well into October in some years.
+
+```{r echo = FALSE, message = FALSE, warning = FALSE, fig.height=6, fig.width = 10}
+ggplot(data = ddply(ddply(peah, 
+                    .(Week, Year, CurYear), 
+                    summarise, 
+                    Calories = sum(Calories, na.rm = T)), 
+                    .(Week, CurYear), 
+                    summarise, 
+                    Calories = mean(Calories, na.rm = T)), 
+       aes(x = Week, y = Calories)) + 
+  geom_line(aes(group = CurYear, colour = CurYear), size = 1) + 
+  scale_y_continuous(labels = comma) + 
+  scale_colour_brewer(name = "", palette = "Dark2") + 
+  theme_minimal(base_size = 16, base_family = "Times")
+```
+
+That's all!
+
+```{r echo = FALSE, message = FALSE, warning = FALSE, fig.height=6}
+cumsum <- data.frame(Crop=NA, Week=NA, variable=NA, value=NA)
+for (i in 1:length(crops)) 
+  {x <- subset(cumul, Crop == crops[i])
+   x[3:7] <- cumsum(x[3:7])
+   x <- melt(as.data.frame(x), id.vars = c("Crop", "Week"))
+   cumsum <- rbind(cumsum, x)
+}
+cumsum <- cast(subset(cumsum, Crop != 'NA'), 
+               Week + variable ~ Crop, value = "value", sum)
+
+p <- nPlot(tomatoes ~ Week, 
+           group = "variable", width = 500,
+           data = cumsum, 
+           type = 'lineChart')
+p$chart(margin = list(right = 100), interpolate = "basis-open")
+p$addControls("y", value = "tomatoes", values = levels(cumul$Crop))
+p
+```
+
+
+
