@@ -13,7 +13,9 @@ mode        : selfcontained # {standalone, draft}
 
 ## 2014 overall results
 
-We had great results in 2014! While [2013 had the lowest yields ever](http://sgaul.github.io/peah2013/), this year had the highest yields ever (at least, as far as the historical record stands).  
+We had great results in 2014! 
+
+While [2013 had the lowest yields ever](http://sgaul.github.io/peah2013/), this year had the highest yields ever (at least, as far as the historical record shows).  
 
 We distributed 2,367 pounds of vegetables or about 225,000 calories - roughly three months of food for an adult. This is almost three times last year's total and 40 percent higher than the previous best year.
 
@@ -290,10 +292,11 @@ Here is the same result in pounds harvested.
     };
 </script>
 
-
 ## 2014 individual results
 
-Individual results for the year are listed in the table below. (Some gardeners harvested more than one crop for the pe'ah contribution, so each crop is shown in that case. We also tracked a few plots in the same column, so I've lumped those together, i.e. plots 6 and 11 are 'Masha and Dan and Len and Avery').  
+Individual results for the year are listed in the table below. 
+
+Some gardeners harvested more than one crop for the pe'ah contribution, so each crop is shown in that case. We also tracked a few plots in the same column, so I've lumped those together, i.e. plots 6 ('Masha and Dan') and 11 ('Len and Avery') are listed as 'Masha and Dan and Len and Avery.'  
 
 <!-- html table generated in R 3.0.2 by xtable 1.7-4 package -->
 <!-- Tue Oct 14 11:30:04 2014 -->
@@ -352,9 +355,9 @@ Individual results for the year are listed in the table below. (Some gardeners h
 
 The full data for all years can be found [here](https://docs.google.com/spreadsheet/ccc?key=0AlYsW526rxsmdDhIVzM0VDYzRkdLOXlvcldfQkJtcnc&usp=sharing). 
 
-We don't have individual results for plots the same as in prior years since results for some plots were tracked in the same column. 
+We don't have results for individual plots the same as in prior years since results for some plots were tracked in the same column. 
 
-We do have results for particular crops. We distributed 15 different kinds of vegetables this year, with tomatoes, squash and zucchini yielding the most (over 300 lbs of each). 
+But we do have results by crops. We distributed 15 different kinds of vegetables this year, with tomatoes, squash and zucchini yielding the most (over 300 lbs of each). 
 
 
 <div id = 'chart4' class = 'rChart nvd3'></div>
@@ -497,7 +500,7 @@ We do have results for particular crops. We distributed 15 different kinds of ve
     };
 </script>
 
-The results by calories are similar, although a couple high-calorie crops like beets and kale show up with better results: 
+The results by calories are similar, with a couple high-calorie crops like beets and kale having more of an impact: 
 
 
 <div id = 'chart5' class = 'rChart nvd3'></div>
@@ -642,19 +645,25 @@ The results by calories are similar, although a couple high-calorie crops like b
 
 ## Comparison with prior years
 
-It was a good year for many crops and not really a bad year for any particular crop. We had historically good yields for beets, cucumbers, beans and lettuce. Results for most other crops were above average. 
+Why were things better this year? 
+
+We had good results for virtually everything we planed and not really a bad year for any particular crop. We had historically good yields for beets, cucumbers, beans and lettuce. Results for most other crops were above average. 
 
 ![plot of chunk unnamed-chunk-2](assets/fig/unnamed-chunk-2.png) 
 
-If we compare the total yields by month to the average yields for all prior years, 2014 had higher yields in every month after June, with the biggest differences in July and August.
+Why else did things go so well this year? 
+
+It looks like we did well harvesting early in the summer. If we compare the yields by month to the average yields in prior years, 2014 had higher yields in every month after June, with the biggest differences in July and August.
 
 ![plot of chunk unnamed-chunk-3](assets/fig/unnamed-chunk-3.png) 
 
-Based on a week-by-week comparison with prior years, we do not appear to have had a noticeably longer growing season than in the past. Harvests continued well into October in some years.
+Were the results better because we had a longer growing season? 
+
+Based on a week-by-week comparison with prior years, we do not appear to have had a noticeably longer growing season than in the past though. Harvests continued well into October in some years, although it looks like second plantings or late harvests helped out a little in September.
 
 ![plot of chunk unnamed-chunk-4](assets/fig/unnamed-chunk-4.png) 
 
-That's all!
+What else can we learn from this year to make next year even better again? 
 
 
 ```
