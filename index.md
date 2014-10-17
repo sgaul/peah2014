@@ -17,7 +17,7 @@ We had great results in 2014!
 
 While [2013 had the lowest yields ever](http://sgaul.github.io/peah2013/), this year had the highest yields ever (at least, as far as the historical record goes).  
 
-We distributed 2,367 pounds of vegetables or about 225,000 calories - roughly three months of food for an adult. This is almost three times last year's total and 40 percent higher than the previous best year.
+We distributed 2,606 pounds of vegetables or about 250,000 calories - roughly three months of food for an adult. This is almost three times last year's total and 50 percent higher than the previous best year.
 
 
 
@@ -101,8 +101,8 @@ We distributed 2,367 pounds of vegetables or about 225,000 calories - roughly th
 },
 {
  "Year": 2014,
-"Pounds":           2390,
-"Calories":      226981.84 
+"Pounds":           2606,
+"Calories":      255860.78 
 } 
 ]
   
@@ -237,8 +237,8 @@ Here is the same result in pounds harvested.
 },
 {
  "Year": 2014,
-"Pounds":           2390,
-"Calories":      226981.84 
+"Pounds":           2606,
+"Calories":      255860.78 
 } 
 ]
   
@@ -299,23 +299,23 @@ Individual results for the year are listed in the table below.
 Some gardeners harvested more than one crop for the pe'ah contribution, so each crop is shown in that case. We also tracked a few plots in the same column, so I've lumped those together, i.e. plots 6 ('Masha and Dan') and 11 ('Len and Avery') are listed as 'Masha and Dan and Len and Avery.'  
 
 <!-- html table generated in R 3.0.2 by xtable 1.7-4 package -->
-<!-- Tue Oct 14 15:29:58 2014 -->
+<!-- Thu Oct 16 23:57:53 2014 -->
 <table border=1>
 <tr> <th> Name </th> <th> Crop </th> <th> Pounds </th> <th> Calories </th>  </tr>
-  <tr> <td> Avi and Michelle </td> <td> broccoli </td> <td align="right"> 18 </td> <td align="right"> 2701 </td> </tr>
-  <tr> <td> Avi and Michelle </td> <td> collards </td> <td align="right"> 10 </td> <td align="right"> 1362 </td> </tr>
+  <tr> <td> Avi and Michelle </td> <td> broccoli </td> <td align="right"> 26 </td> <td align="right"> 4091 </td> </tr>
+  <tr> <td> Avi and Michelle </td> <td> collards </td> <td align="right"> 22 </td> <td align="right"> 3064 </td> </tr>
   <tr> <td> Avi and Michelle </td> <td> cucumbers </td> <td align="right"> 190 </td> <td align="right"> 12922 </td> </tr>
-  <tr> <td> Avi and Michelle </td> <td> lettuce </td> <td align="right"> 34 </td> <td align="right"> 2349 </td> </tr>
-  <tr> <td> Avi and Michelle </td> <td> parsley </td> <td align="right"> 4 </td> <td align="right"> 654 </td> </tr>
+  <tr> <td> Avi and Michelle </td> <td> lettuce </td> <td align="right"> 37 </td> <td align="right"> 2520 </td> </tr>
+  <tr> <td> Avi and Michelle </td> <td> parsley </td> <td align="right"> 6 </td> <td align="right"> 1062 </td> </tr>
   <tr> <td> Avi and Michelle </td> <td> tomatoes </td> <td align="right"> 0 </td> <td align="right"> 34 </td> </tr>
   <tr> <td> Avi and Michelle </td> <td> zucchini </td> <td align="right"> 8 </td> <td align="right"> 545 </td> </tr>
   <tr> <td> Community </td> <td> beans </td> <td align="right"> 20 </td> <td align="right"> 2780 </td> </tr>
   <tr> <td> Community </td> <td> beets </td> <td align="right"> 2 </td> <td align="right"> 488 </td> </tr>
   <tr> <td> Community </td> <td> cabbage </td> <td align="right"> 7 </td> <td align="right"> 794 </td> </tr>
   <tr> <td> Community </td> <td> peppers </td> <td align="right"> 10 </td> <td align="right"> 863 </td> </tr>
-  <tr> <td> Community </td> <td> tomatoes </td> <td align="right"> 70 </td> <td align="right"> 4767 </td> </tr>
+  <tr> <td> Community </td> <td> tomatoes </td> <td align="right"> 78 </td> <td align="right"> 5278 </td> </tr>
   <tr> <td> Community </td> <td> zucchini </td> <td align="right"> 40 </td> <td align="right"> 2906 </td> </tr>
-  <tr> <td> Dalton and Larry </td> <td> collards </td> <td align="right"> 22 </td> <td align="right"> 2996 </td> </tr>
+  <tr> <td> Dalton and Larry </td> <td> collards </td> <td align="right"> 202 </td> <td align="right"> 27512 </td> </tr>
   <tr> <td> Holly / Deb / Toni / Community </td> <td> beets </td> <td align="right"> 120 </td> <td align="right"> 23426 </td> </tr>
   <tr> <td> Holly / Deb / Toni / Community </td> <td> corn </td> <td align="right"> 3 </td> <td align="right"> 1446 </td> </tr>
   <tr> <td> Holly / Deb / Toni / Community </td> <td> parsley </td> <td align="right"> 2 </td> <td align="right"> 327 </td> </tr>
@@ -326,7 +326,7 @@ Some gardeners harvested more than one crop for the pe'ah contribution, so each 
   <tr> <td> Holly and Deb </td> <td> tomatoes </td> <td align="right"> 1 </td> <td align="right"> 68 </td> </tr>
   <tr> <td> Holly and Deb and Rabbi and Janice </td> <td> peppers </td> <td align="right"> 55 </td> <td align="right"> 4971 </td> </tr>
   <tr> <td> Jennifer </td> <td> lettuce </td> <td align="right"> 85 </td> <td align="right"> 5788 </td> </tr>
-  <tr> <td> Jennifer </td> <td> peppers </td> <td align="right"> 5 </td> <td align="right"> 454 </td> </tr>
+  <tr> <td> Jennifer </td> <td> peppers </td> <td align="right"> 7 </td> <td align="right"> 636 </td> </tr>
   <tr> <td> Jennifer </td> <td> tomatoes </td> <td align="right"> 20 </td> <td align="right"> 1362 </td> </tr>
   <tr> <td> Julie and David </td> <td> cucumbers </td> <td align="right"> 1 </td> <td align="right"> 85 </td> </tr>
   <tr> <td> Julie and David </td> <td> kale </td> <td align="right"> 81 </td> <td align="right"> 18444 </td> </tr>
@@ -388,8 +388,8 @@ But we do have results by crops. We distributed 15 different kinds of vegetables
 },
 {
  "Crop": "broccoli",
-"Pounds":           17.5,
-"Calories":         2701.3 
+"Pounds":           26.5,
+"Calories":        4090.54 
 },
 {
  "Crop": "cabbage",
@@ -398,8 +398,8 @@ But we do have results by crops. We distributed 15 different kinds of vegetables
 },
 {
  "Crop": "collards",
-"Pounds":             32,
-"Calories":         4358.4 
+"Pounds":          224.5,
+"Calories":        30576.9 
 },
 {
  "Crop": "corn",
@@ -413,8 +413,8 @@ But we do have results by crops. We distributed 15 different kinds of vegetables
 },
 {
  "Crop": "eggplant",
-"Pounds":          31.75,
-"Calories":        3459.48 
+"Pounds":          34.75,
+"Calories":        3786.36 
 },
 {
  "Crop": "kale",
@@ -423,18 +423,18 @@ But we do have results by crops. We distributed 15 different kinds of vegetables
 },
 {
  "Crop": "lettuce",
-"Pounds":          127.5,
-"Calories":        8682.75 
+"Pounds":            130,
+"Calories":           8853 
 },
 {
  "Crop": "parsley",
-"Pounds":              6,
-"Calories":         980.64 
+"Pounds":            8.5,
+"Calories":        1389.24 
 },
 {
  "Crop": "peppers",
-"Pounds":         160.25,
-"Calories":        14550.7 
+"Pounds":         162.25,
+"Calories":        14732.3 
 },
 {
  "Crop": "squash",
@@ -443,8 +443,8 @@ But we do have results by crops. We distributed 15 different kinds of vegetables
 },
 {
  "Crop": "tomatoes",
-"Pounds":         446.75,
-"Calories":      30423.675 
+"Pounds":         474.25,
+"Calories":      32296.425 
 },
 {
  "Crop": "zucchini",
@@ -531,8 +531,8 @@ The results by calories are similar, with a couple high-calorie crops like beets
 },
 {
  "Crop": "broccoli",
-"Pounds":           17.5,
-"Calories":         2701.3 
+"Pounds":           26.5,
+"Calories":        4090.54 
 },
 {
  "Crop": "cabbage",
@@ -541,8 +541,8 @@ The results by calories are similar, with a couple high-calorie crops like beets
 },
 {
  "Crop": "collards",
-"Pounds":             32,
-"Calories":         4358.4 
+"Pounds":          224.5,
+"Calories":        30576.9 
 },
 {
  "Crop": "corn",
@@ -556,8 +556,8 @@ The results by calories are similar, with a couple high-calorie crops like beets
 },
 {
  "Crop": "eggplant",
-"Pounds":          31.75,
-"Calories":        3459.48 
+"Pounds":          34.75,
+"Calories":        3786.36 
 },
 {
  "Crop": "kale",
@@ -566,18 +566,18 @@ The results by calories are similar, with a couple high-calorie crops like beets
 },
 {
  "Crop": "lettuce",
-"Pounds":          127.5,
-"Calories":        8682.75 
+"Pounds":            130,
+"Calories":           8853 
 },
 {
  "Crop": "parsley",
-"Pounds":              6,
-"Calories":         980.64 
+"Pounds":            8.5,
+"Calories":        1389.24 
 },
 {
  "Crop": "peppers",
-"Pounds":         160.25,
-"Calories":        14550.7 
+"Pounds":         162.25,
+"Calories":        14732.3 
 },
 {
  "Crop": "squash",
@@ -586,8 +586,8 @@ The results by calories are similar, with a couple high-calorie crops like beets
 },
 {
  "Crop": "tomatoes",
-"Pounds":         446.75,
-"Calories":      30423.675 
+"Pounds":         474.25,
+"Calories":      32296.425 
 },
 {
  "Crop": "zucchini",

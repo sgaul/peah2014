@@ -17,7 +17,7 @@ We had great results in 2014!
 
 While [2013 had the lowest yields ever](http://sgaul.github.io/peah2013/), this year had the highest yields ever (at least, as far as the historical record goes).  
 
-We distributed 2,367 pounds of vegetables or about 225,000 calories - roughly three months of food for an adult. This is almost three times last year's total and 40 percent higher than the previous best year.
+We distributed 2,606 pounds of vegetables or about 250,000 calories - roughly three months of food for an adult. This is almost three times last year's total and 50 percent higher than the previous best year.
 
 ```{r setup, message = F, echo = F, cache = F}
 require(rCharts)
